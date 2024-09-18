@@ -25,7 +25,7 @@ const items = [
     icon: <SettingOutlined />,
     children: [
       {
-        label: "Đăng nhập",
+        label: <Link to="login">Đăng nhập</Link>,
         key: "login",
       },
       {
