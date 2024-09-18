@@ -1,15 +1,19 @@
 import React from "react";
 import { Button, Checkbox, Form, Input, notification } from "antd";
-import { login } from "../util/api";
+import { loginApi } from "../util/api";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const navigate = useNavigate();
   const onFinish = async (values) => {
     const { email, password } = values;
-    const res = await login(email, password);
-    console.log(res);
-    if (res) {
+    const res = await loginApi(email, password);
+
+    console.log("res.user?.EC");
+    console.log(res.user?.EC);
+
+    if (res?.EC == 0) {
+      localStorage.setItem("access_token", res.access_token);
       notification.success({
         message: "Login Successful",
         description: "Success",
@@ -18,7 +22,7 @@ const LoginPage = () => {
     } else {
       notification.error({
         message: "Login Error",
-        description: "Error",
+        description: res?.EM ?? "Error",
       });
     }
   };
