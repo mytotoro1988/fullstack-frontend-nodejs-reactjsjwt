@@ -4,17 +4,19 @@ import {
   MailOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 import { Menu } from "antd";
+
 const items = [
   {
-    label: "Home Page",
+    label: <Link to="/">Home Page</Link>,
     key: "home",
     icon: <MailOutlined />,
   },
 
   {
-    label: "Users",
-    key: "users",
+    label: <Link to="/user">Users</Link>,
+    key: "user",
     icon: <MailOutlined />,
   },
   {
