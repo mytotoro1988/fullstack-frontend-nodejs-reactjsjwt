@@ -9,9 +9,6 @@ const LoginPage = () => {
     const { email, password } = values;
     const res = await loginApi(email, password);
 
-    console.log("res.user?.EC");
-    console.log(res.user?.EC);
-
     if (res?.EC == 0) {
       localStorage.setItem("access_token", res.access_token);
       notification.success({

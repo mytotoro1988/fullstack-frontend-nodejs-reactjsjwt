@@ -12,4 +12,11 @@ const loginApi = (email, password) => {
   return axios.post(URL_API, data);
 };
 
-export { loginApi, createUserApi };
+const getUser = () => {
+  const URL_API = "/v1/api/user";
+  return axios.get(URL_API);
+};
+
+
+
+export { loginApi, createUserApi, getUser };
