@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3005",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "serve": "vite preview --port 3005"
