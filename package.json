@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --port 3002",
+    "build": "vite build",
     "lint": "eslint .",
-    "serve": "vite preview --port 3002"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
