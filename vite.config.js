@@ -7,5 +7,8 @@ export default defineConfig({
     port: 3004, // Cổng chạy server preview (nếu dùng lệnh 'vite preview')
     open: true,
   },
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
   plugins: [react()],
 });
