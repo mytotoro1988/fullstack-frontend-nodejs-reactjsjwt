@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "serve": "vite preview -p 3002"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
