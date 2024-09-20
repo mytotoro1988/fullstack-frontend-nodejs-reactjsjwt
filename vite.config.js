@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-
+import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   preview: {
@@ -9,6 +9,12 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1600,
+    rollupOptions: {
+      input: {
+        main: resolve("/dist", "index.html"),
+        nested: resolve("/dist", "nested/index.html"),
+      },
+    },
   },
   plugins: [react()],
 });
