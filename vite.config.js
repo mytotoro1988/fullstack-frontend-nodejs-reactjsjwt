@@ -11,8 +11,9 @@ export default defineConfig({
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
       input: {
-        main: resolve("/dist", "index.html"),
-        nested: resolve("/dist", "nested/index.html"),
+        input: './src/index.html', // Đảm bảo đường dẫn này đúng,
+        // main: resolve("/dist", "index.html"),
+        // nested: resolve("/dist", "nested/index.html"),
       },
     },
   },
