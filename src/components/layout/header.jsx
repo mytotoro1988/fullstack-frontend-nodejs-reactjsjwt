@@ -15,18 +15,18 @@ const items = [
   },
 
   {
-    label: <Link to="/user">Users</Link>,
-    key: "user",
-    icon: <MailOutlined />,
-  },
-  {
     label: <Link to="/test">Test</Link>,
     key: "test",
     icon: <MailOutlined />,
   },
   {
-    label: <Link to="/test2">Test</Link>,
+    label: <Link to="/test2">Test2</Link>,
     key: "test2",
+    icon: <MailOutlined />,
+  },
+  {
+    label: <Link to="/user">Users</Link>,
+    key: "user",
     icon: <MailOutlined />,
   },
   {

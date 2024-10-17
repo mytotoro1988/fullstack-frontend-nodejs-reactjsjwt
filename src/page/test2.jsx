@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { getUser } from "../util/api";
-import { Table } from "antd";
+import img from "./../../public/bg.png";
 const TestPage = () => {
   return (
     <div>
-      <div className="p-5">
-        <div className="vh1002">test2</div>
-      </div>
+      {/* <img src={img} alt="test" /> */}
+      <div className="vh1002">test2</div>
     </div>
   );
 };
