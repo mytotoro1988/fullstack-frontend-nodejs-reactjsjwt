@@ -1,10 +1,20 @@
 import img from "./../../public/bg.png";
 const TestPage = () => {
   return (
-    <div>
-      {/* <img src={img} alt="test" /> */}
-      <div className="vh1002">test2</div>
-    </div>
+    <main>
+      <section className="vh1002">
+        {/* <img src={img} alt="test" /> */}
+        test2
+      </section>
+      <section className="vh1002">
+        {/* <img src={img} alt="test" /> */}
+        test2
+      </section>
+      <section className="vh1002">
+        {/* <img src={img} alt="test" /> */}
+        test2
+      </section>
+    </main>
   );
 };
 
