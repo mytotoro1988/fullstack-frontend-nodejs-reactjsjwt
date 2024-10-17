@@ -8,12 +8,6 @@ import { onFCP } from "web-vitals";
 onFCP(console.log);
 
 function App() {
-  useEffect(() => {
-    const fetchHelloWorld = async () => {
-      const res = await axios.get(`/v1/api`);
-    };
-    fetchHelloWorld();
-  }, []);
   return (
     <div>
       <Header />
