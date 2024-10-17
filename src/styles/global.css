@@ -5,3 +5,21 @@
   margin: 0;
   padding: 0;
 }
+
+.vh100 {
+  height: 100vh;
+  height: 100dvh;
+  background-image: url(/../public/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.vh1002 {
+  height: 100vh;
+  background-image: url(/../public/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}

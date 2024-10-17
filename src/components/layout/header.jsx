@@ -20,6 +20,16 @@ const items = [
     icon: <MailOutlined />,
   },
   {
+    label: <Link to="/test">Test</Link>,
+    key: "test",
+    icon: <MailOutlined />,
+  },
+  {
+    label: <Link to="/test2">Test</Link>,
+    key: "test2",
+    icon: <MailOutlined />,
+  },
+  {
     label: "Welcome",
     key: "SubMenu",
     icon: <SettingOutlined />,
